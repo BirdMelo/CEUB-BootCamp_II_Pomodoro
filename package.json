@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "node": "^25.8.1"
+  },
+  "name": "ceub-bootcamp_ii_pomodoro",
+  "version": "1.0.0",
+  "description": "Na era digital, a atenção tornou-se um dos recursos mais escassos e disputados. Estudantes e profissionais enfrentam diariamente um ambiente saturado de interrupções, onde o excesso de estímulos fragmenta a concentração e dificulta o aprendizado profundo. O hábito de tentar estudar ou trabalhar por longas horas ininterruptas frequentemente leva à exaustão cognitiva (burnout mental), à queda drástica de retenção de informações e à procrastinação crônica. Para muitas pessoas, a simples percepção da passagem do tempo é distorcida, tornando o gerenciamento do próprio ritmo de estudo uma tarefa exaustiva por si só.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.3",
+    "globals": "^17.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BirdMelo/CEUB-BootCamp_II_Pomodoro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/BirdMelo/CEUB-BootCamp_II_Pomodoro/issues"
+  },
+  "homepage": "https://github.com/BirdMelo/CEUB-BootCamp_II_Pomodoro#readme"
+}
