@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+/* CONFIGURAÇÕES BASICAS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+:root {
+    --studing-color:#E96256;
+    --short-color:#8CBB84;
+    --long-color:#F7A753;
+    --highlight-color:#144480;
+    --background-color:#001e36;
+    --text-color:white;
+
+    --text-font: Arial, Helvetica, sans-serif;
+    --timer-font: "Archivo Black", sans-serif;
+}
+[data-context="studing"] {
+    --border-context:var(--studing-color);
+    --background-context: rgb(from var(--studing-color) r g b / 15%)
+}
+[data-context="short"] {
+    --border-context:var(--short-color);
+    --background-context: rgb(from var(--short-color) r g b / 15%)
+}
+[data-context="long"] {
+    --border-context:var(--long-color);
+    --background-context: rgb(from var(--long-color) r g b / 15%)
+}
+
+body {
+    background: linear-gradient(195deg,var(--highlight-color), var(--background-color) 60%) no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-family: var(--text-font);
+}
+
+/* CONFIGURAÇÕES DO CARD DO TIMER */
+
+#card {
+    background-color: var(--background-context);
+    border: solid 3px var(--border-context);
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+header h1 {
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+#timer {
+    font-size: 3rem;
+    font-family: var(--timer-font);
+}
+section button {
+    width: 110px;
+    padding: 8px 4px;
+    border-radius: 16px;
+    background-color: var(--background-context);
+    border: solid 1px var(--border-context);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+#play {
+    background-color: var(--background-context);
+    border: solid 1px var(--border-context);
+    border-radius: 16px;
+    width: 110px;
+    padding: 8px 4px;
+}
+
+/* CONFIGURAÇÕES DO FOOTER */
+
+footer {
+    background-color: black;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 16px;
+    bottom: 0;
+    width: 100vw;
+    align-items: center;
+}
+footer img {
+    width: 100px;
+}
