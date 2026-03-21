@@ -78,7 +78,7 @@ section button {
     cursor: pointer;
 }
 
-#play {
+#start-pause {
     background-color: var(--background-context);
     border: solid 1px var(--border-context);
     border-radius: 16px;
