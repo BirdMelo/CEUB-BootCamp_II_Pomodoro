@@ -39,8 +39,26 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 Quando o usuário rodar o `npm install`, o Node vai ler o seu arquivo `package.json`, ver que o projeto precisa do ESLint, e vai recriar automaticamente aquela pasta `node_modules` que nós mandamos o `.gitignore` esconder. É mágico!
 
 ## 💻 Instruções de Execução
-Para rodar o projeto localmente, execute o seguinte comando:
-* 
+Devido ao uso de **ES Modules** (`import`/`export`), o navegador bloqueia a execução direta do arquivo HTML via protocolo `file://`. Para visualizar o projeto corretamente, utilize uma das opções abaixo:
+
+### 1. Extensão Live Server (VS Code)
+Esta é a opção mais prática para quem utiliza o Visual Studio Code, pois oferece *Hot Reload* (atualiza a página automaticamente ao salvar arquivos).
+
+* **Instalação:** Procure por "Live Server" na aba de extensões do VS Code.
+* **Execução:** Clique no botão **Go Live** localizado na barra de status (canto inferior direito da IDE).
+* **Acesso:** A aplicação será aberta automaticamente no seu navegador padrão.
+
+### 2. Servidor Local via Node.js (npx)
+Caso prefira a linha de comando ou não queira instalar extensões, você pode utilizar o pacote `serve`.
+
+* **Passo a passo:**
+  1. Abra o terminal na raiz do projeto.
+  2. Navegue até a pasta que contém o `index.html` (ex: `cd src`, se os arquivos estiverem lá).
+  3. Execute o comando:
+     ```
+     npx serve .
+     ```
+* **Acesso:** O terminal fornecerá um link local (ex: `http://localhost:3000`). Copie e cole no seu navegador.
 
 ## 🧪 Instruções para rodar os Testes
 Para executar a suíte de testes automatizados e validar o funcionamento da aplicação:
@@ -54,6 +72,6 @@ Para rodar a análise estática do código e verificar a formatação:
 
 ---
 
-* **Versão atual:** 1.3.1
+* **Versão atual:** 1.3.2
 * **Nome do Autor:** João Pedro de Melo Naves
-* **Link do Repositório Público:** [https://github.com/BirdMelo/CEUB-BootCamp_II_Pomodoro](https://github.com/BirdMelo/CEUB-BootCamp_II_Pomodoro)
+* **Link do Repositório Público:** [GitHub](https://github.com/BirdMelo/CEUB-BootCamp_II_Pomodoro), [Vercel](https://ceub-boot-camp-ii-pomodoro-spiz.vercel.app/)
