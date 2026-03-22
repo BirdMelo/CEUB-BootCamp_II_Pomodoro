@@ -54,6 +54,6 @@ Para rodar a análise estática do código e verificar a formatação:
 
 ---
 
-* **Versão atual:** 1.3.0
+* **Versão atual:** 1.3.1
 * **Nome do Autor:** João Pedro de Melo Naves
 * **Link do Repositório Público:** [https://github.com/BirdMelo/CEUB-BootCamp_II_Pomodoro](https://github.com/BirdMelo/CEUB-BootCamp_II_Pomodoro)

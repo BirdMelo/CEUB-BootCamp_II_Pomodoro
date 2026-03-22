@@ -1,4 +1,4 @@
-import { start, studingTime, shortTime, longTime, formatTime } from "./timer.js"
+import { start, studingTime, shortTime, longTime, formatTime, clearTimer } from "./timer.js"
 
 const timerDisplay = document.getElementById('timer')
 const start_pause_bt = document.getElementById('start-pause')
@@ -8,6 +8,12 @@ const longBtn = document.getElementById('long')
 const html = document.querySelector('html')
 
 export let time = studingTime
+
+function resetTimer() {
+    clearTimer()
+    const icon = start_pause_bt.querySelector('img')
+    if (icon) icon.setAttribute('src', './assets/icons/play_arrow.png')
+}
 
 function updateDisplay(value) {
     time = value
@@ -27,16 +33,19 @@ start_pause_bt.addEventListener('click', () => {
 })
 
 studingBtn.addEventListener('click', () => {
+    resetTimer()
     updateDisplay(studingTime)
     html.setAttribute('data-context', 'studing')
 })
 
 shortBtn.addEventListener('click', () => {
+    resetTimer()
     updateDisplay(shortTime)
     html.setAttribute('data-context', 'short')
 })
 
 longBtn.addEventListener('click', () => {
+    resetTimer()
     updateDisplay(longTime)
     html.setAttribute('data-context', 'long')
 })
