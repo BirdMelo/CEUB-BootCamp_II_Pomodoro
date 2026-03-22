@@ -1,6 +1,6 @@
 export const studingTime = 7200
-export const shortTime = 300
-export const longTime = 900
+export const shortTime = studingTime / 4
+export const longTime = studingTime / 2
 
 let timerInterval = null
 
